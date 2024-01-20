@@ -1,0 +1,84 @@
+/* Colours */
+.dark-back
+{
+    background-color: #1F2937;
+}
+
+.call-back
+{
+    background-color: white;
+}
+
+.quote-back
+{
+    background-color: #E5E7EB;
+}
+
+.primary
+{
+    background-color: #3882F6;
+}
+
+/* Typography */
+.hero-main
+{
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+.hero-secondary
+{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.header-logo
+{
+    font-size: 24px;
+    color: #F9FAf8;
+}
+
+.info-header
+{
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
+.quote-back
+{
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
+    color: #1F2937
+}
+
+/* Divisions */
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul
+{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+footer
+{
+    height: 2rem;
+}
