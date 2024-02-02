@@ -1,84 +1,93 @@
-/* Colours */
-.dark-back
+/* Global */
+*
 {
-    background-color: #1F2937;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
 }
 
-.call-back
+/* Images */
+.logo
 {
-    background-color: white;
+    height: 48px;
+    width: 48px;
 }
 
-.quote-back
-{
-    background-color: #E5E7EB;
-}
-
-.primary
-{
-    background-color: #3882F6;
-}
-
-/* Typography */
+/* Text */
 .hero-main
 {
     font-size: 48px;
-    font-weight: 900;
     color: #F9FAF8;
 }
 
 .hero-secondary
 {
     font-size: 18px;
+    font-weight: 900;
     color: #E5E7EB;
 }
 
-.header-logo
-{
-    font-size: 24px;
-    color: #F9FAf8;
-}
-
-.info-header
+.info-head
 {
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
 }
 
-.quote-back
+.quote
 {
     font-size: 36px;
-    font-weight: 100;
+    font-weight: 200;
     font-style: italic;
-    color: #1F2937
+    color: #1F2937;
 }
+
+/* Note: header logo text replaced with an image */
 
 /* Divisions */
-*
-{
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-}
-
 nav
 {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #1F2937;
 }
 
 nav ul
 {
-    list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 10px;
+    list-style: none;
+}
+
+.hero
+{
+    height: 2rem;
+    background-color: #1F2937;
+}
+
+.info
+{
+    height: 2rem;
+    background-color: white;
+}
+
+.quote
+{
+    height: 2rem;
+    background-color: #E5E7EB;
+}
+
+.call
+{
+    height: 2rem;
+    background-color: white;
 }
 
 footer
 {
-    height: 2rem;
+    padding: 1rem 0px;
+    text-align: center;
+    color: white;
+    background-color: #1F2937;
 }
