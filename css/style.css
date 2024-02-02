@@ -25,17 +25,50 @@
     filter: invert(100%);
 }
 
+/* BUTTONS */
+.button
+{
+    margin: 0.5rem 0rem;
+    padding: 0.5rem 1.25rem;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+}
+
+.primary-button-solid
+{
+
+    color: #F9FAF8;
+    border-radius: 5px;
+    background-color: #3882F6;
+}
+
+.primary-button-solid:hover
+{
+
+    color: #F9FAF8;
+    border-radius: 5px;
+    background-color: hsl(217, 64%, 46%);
+}
+
+/* .primary-button-outline
+{
+
+} */
+
 /* TEXT */
-.hero-main
+.hero-primary
 {
     font-size: 48px;
     color: #F9FAF8;
+    line-height: 1.25;
 }
 
 .hero-secondary
 {
     font-size: 18px;
-    font-weight: 900;
+    font-weight: normal;
     color: #E5E7EB;
 }
 
@@ -103,7 +136,34 @@
 .hero
 {
     height: auto;
+    padding: 0rem calc(40%/2);
     background-color: #1F2937;
+}
+
+.clearfix
+{
+    padding: 2rem 0;
+}
+
+.clearfix::after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.half-box
+{
+    float: left;
+    height: 256px;
+    width: 50%;
+}
+
+.half-box img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 /* Info */
