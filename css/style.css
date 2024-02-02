@@ -13,6 +13,8 @@
 {
     height: 48px;
     width: 48px;
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
 }
 
 /* Text */
@@ -47,17 +49,34 @@
 /* Note: header logo text replaced with an image */
 
 /* Divisions */
-nav
+.nav-list
 {
     display: flex;
     background-color: #1F2937;
+    margin: 0;
+    padding: 1rem 0rem;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-nav ul
+.nav-item
 {
-    display: flex;
-    gap: 10px;
     list-style: none;
+    margin-right: 2rem;
+}
+
+.nav-item a
+{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: normal;
+    color: #E5E7EB;
+}
+
+.nav-item:first-child
+{
+    margin-right: auto;
+    margin-left: 2rem;
 }
 
 .hero
@@ -88,6 +107,6 @@ footer
 {
     padding: 1rem 0px;
     text-align: center;
-    color: white;
+    color: #E5E7EB;
     background-color: #1F2937;
 }
