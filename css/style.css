@@ -107,14 +107,13 @@
     display: flex;
     background-color: #1F2937;
     margin: 0;
-    padding: 1rem 0rem;
-    justify-content: flex-end;
+    padding: 1rem calc(40%/2);
     align-items: center;
+    list-style: none;
 }
 
-.nav-item
+.nav-item:not(:last-child) 
 {
-    list-style: none;
     margin-right: 2rem;
 }
 
@@ -129,7 +128,6 @@
 .nav-item:first-child
 {
     margin-right: auto;
-    margin-left: 2rem;
 }
 
 /* Hero */
