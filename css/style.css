@@ -87,46 +87,12 @@ button.filled:hover, button.outlined:hover {
 }
 
 /* TEXT */
-
-
-.info-head
-{
-  font-size: 36px;
-  font-weight: 900;
-  text-align: center;
-  color: var(--secondary-bg);
-}
-
-.quote-text
-{
-  font-size: 28px;
-  font-weight: 300;
-  font-style: italic;
-  text-align: justify;
-  color: var(--secondary-bg);
-}
-
-.quote-ref
-{
-  font-size: 14px;
-  font-weight: bold;
-  text-align: right;
-  color: var(--secondary-bg);
-  line-height: 1;
-}
-
 .call-head
 {
   font-size: 18px;
   font-weight: bold;
   color: var(--primary-text);
   line-height: 1;
-}
-
-p
-{
-  font-size: 14px;
-  font-weight: 400;
 }
 
 
@@ -138,7 +104,7 @@ header{
   background-color: var(--secondary-bg);
 }
 
-nav{
+nav {
   width: 100%;
   height: auto;
   display: inline-flex;
@@ -188,7 +154,6 @@ nav ul li a:hover {
   -webkit-filter: invert(100%);
 }
 
-/* Main */
 /* Hero */
 .hero-container {
   display: inline-flex;
@@ -227,40 +192,69 @@ nav ul li a:hover {
   color: var(--light-gray);
 }
 
+/* Main */
 /* Info */
-.info {
-  height: auto;
-  padding: 4rem calc(40%/2);
+main{
+  height: 100%;
+  width: 100%;
+  padding: 1rem 15%;
   background-color: var(--primary-text)
 }
 
+#info .title{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
 .card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  grid-template-rows: auto;
+  gap: 3rem;
+  padding: 0rem 4rem;
   color: var(--secondary-bg);
+  margin-bottom: 2rem;
 }
 
 .card {
-    flex: 1 0;
-    overflow: hidden;
-    margin: 0rem 1.5rem;
+  width: 100%;
+  height: auto;
 }
 
 .card img {
-    width: 100%;
-    height: 192px;
-    object-fit: cover;
-    border-radius: 5px;
-    border: var(--primary-bg) 4px solid;
+  width: 100%;
+  aspect-ratio: 1/1;
+  margin-bottom: 0.5rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  border: var(--primary-bg) 4px solid;
 }
 
-.card-info {
-    padding: 0px;
-    text-align: center;
+.card .description {
+  text-align: center;
+  font-size: 1rem;
 }
 
 /* Quote */
+.quote-text
+{
+  font-size: 28px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: justify;
+  color: var(--secondary-bg);
+}
+
+.quote-ref
+{
+  font-size: 14px;
+  font-weight: bold;
+  text-align: right;
+  color: var(--secondary-bg);
+  line-height: 1;
+}
+
 .quote {
     height: auto;
     padding: 4rem calc(40%/2);
