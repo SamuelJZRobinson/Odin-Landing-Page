@@ -151,8 +151,7 @@ nav ul li a:hover {
   height: auto;
   gap: 2rem;
   width: 100%;
-  padding: 4rem 15%;
-  margin-bottom: 3rem;
+  padding: 6rem 15%;
   background-color: var(--secondary-bg);
 }
 
@@ -192,7 +191,7 @@ main{
 }
 
 #info{
-  padding: 1rem 20%;
+  padding: 6rem 20%;
 }
 
 #info .title{
@@ -208,7 +207,6 @@ main{
   grid-template-rows: auto;
   gap: 3rem;
   color: var(--secondary-bg);
-  margin-bottom: 2rem;
 }
 
 .card {
@@ -233,7 +231,7 @@ main{
 /* Quote */
 .quote {
   height: auto;
-  padding: 1rem 20%;
+  padding: 6rem 20%;
   background-color: var(--light-gray);
 }
 
@@ -248,7 +246,7 @@ main{
 .quote .reference {
   font-size: 0.8rem;
   font-weight: bold;
-  text-align: right;
+  text-align: center;
   color: var(--secondary-bg);
 }
 
@@ -256,7 +254,7 @@ main{
 #call-to-action {
   width: 100%;
   height: auto;
-  padding: 4rem 15%;
+  padding: 6rem 15%;
 }
 
 #call-to-action .container {
@@ -266,12 +264,12 @@ main{
   height: auto;
   width: 100%;
   padding: 3rem 2rem;
-  border-radius: 5px;
   background-color: var(--primary-bg);
+  border-radius: 5px;
 }
 
 #call-to-action .text-container .title {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-weight: bold;
   color: var(--primary-text);
 }
@@ -279,12 +277,6 @@ main{
 #call-to-action .text-container .description {
   font-size: 1 rem;
   color: var(--primary-text);
-}
-
-.call {
-  height: auto;
-  padding: 4rem calc(40%/2);
-  background-color: var(--primary-text)
 }
 
 /* Footer */
