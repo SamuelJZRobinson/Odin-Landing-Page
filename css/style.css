@@ -145,14 +145,15 @@ nav ul li a:hover {
 }
 
 /* Hero */
-.hero-container {
+.hero {
   display: inline-flex;
   flex-wrap: wrap;
   height: auto;
   gap: 2rem;
   width: 100%;
-  margin-top: 6rem;
+  padding: 4rem 15%;
   margin-bottom: 3rem;
+  background-color: var(--secondary-bg);
 }
 
 .half-box {
@@ -197,6 +198,7 @@ main{
 #info .title{
   text-align: center;
   font-weight: bold;
+  font-size: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -251,46 +253,44 @@ main{
 }
 
 /* Call */
-.call-head
-{
-  font-size: 18px;
+#call-to-action {
+  width: 100%;
+  height: auto;
+  padding: 4rem 15%;
+}
+
+#call-to-action .container {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  padding: 3rem 2rem;
+  border-radius: 5px;
+  background-color: var(--primary-bg);
+}
+
+#call-to-action .text-container .title {
+  font-size: 1.1rem;
   font-weight: bold;
   color: var(--primary-text);
-  line-height: 1;
+}
+
+#call-to-action .text-container .description {
+  font-size: 1 rem;
+  color: var(--primary-text);
 }
 
 .call {
-    height: auto;
-    padding: 4rem calc(40%/2);
-    background-color: var(--primary-text)
-}
-
-.call-container {
-    height: auto;
-    display: flex;
-    padding: 2rem 5rem;
-    color: var(--primary-text);
-    border-radius: 5px;
-    background-color: var(--primary-bg);
-}
-
-.call-container-item {
-    align-items: center;
-}
-
-.call-container-item:nth-of-type(1) {
-    flex: 3;
-}
-
-.call-container-item:nth-of-type(2) {
-    flex: 1;
-    text-align: right;
+  height: auto;
+  padding: 4rem calc(40%/2);
+  background-color: var(--primary-text)
 }
 
 /* Footer */
 footer {
-    padding: 1.5rem 0px;
-    text-align: center;
-    color: var(--primary-text);
-    background-color: var(--secondary-bg);
+  padding: 4rem 0rem;
+  text-align: center;
+  color: var(--primary-text);
+  background-color: var(--secondary-bg);
 }
