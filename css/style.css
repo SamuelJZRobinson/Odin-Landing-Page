@@ -208,26 +208,21 @@ nav ul li a:hover {
 }
 
 /* Hero */
-.hero {
+.hero-container {
+    display: inline-flex;
+    flex-wrap: wrap;
     height: auto;
-    padding: 4rem calc(40%/2);
-    background-color: var(--dark);
-}
-
-.clearfix {
-    padding: 2rem 0;
-}
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
 }
 
 .half-box {
-    float: left;
-    height: 256px;
-    width: 50%;
+    flex: 1 1 45%;
+    height: auto;
+    width: 45%;
+    min-width: 450px; /* Splits half box to seperate line */
 }
 
 .half-box img {
