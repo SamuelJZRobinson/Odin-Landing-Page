@@ -1,16 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-/* GLOBAL */
-*
-{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.5;
-}
-
-/* COLOURS */
+/* Uses joshwcomeau CSS Reset */
+/* Global */
 :root
 {
     --white: #F9FAF8;
@@ -20,14 +9,54 @@
     --dark: #1F2937;
 }
 
-/* IMAGES */
-.logo
-{
-    height: 48px;
-    width: 48px;
-    -webkit-filter: invert(100%); /* Safari/Chrome */
-    filter: invert(100%);
+*, *::before, *::after {
+  box-sizing: border-box;
 }
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Media */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Forms */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Text */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/* Root stacking context */
+#root, #__next {
+  isolation: isolate;
+}
+
+
+
+
+
+
 
 /* BUTTONS */
 .button
@@ -120,87 +149,101 @@ p
     font-weight: 400;
 }
 
-/* Note: header logo text replaced with an image */
 
-/* DIVISIONS */
-/* Navigation */
-.nav-list
-{
-    display: flex;
-    background-color: var(--dark);
-    margin: 0;
-    padding: 1rem calc(40%/2);
-    align-items: center;
-    list-style: none;
+/* Header */
+header{
+  width: 100%;
+  height: auto;
+  padding: 1rem 15%;
+  background-color: var(--dark);
 }
 
-.nav-item:not(:last-child) 
-{
-    margin-right: 2rem;
+nav{
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.nav-item a
-{
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: normal;
-    color: var(--light-gray);
+nav ul {
+  display: inline-flex;
+  gap: 2rem;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  list-style: none;
+  
 }
 
-.nav-item a:hover
-{
+nav ul li {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+nav ul li a{
+  color: var(--light-gray);
+}
+
+nav ul li a:hover {
     color: var(--primary);
 }
 
-.nav-item:first-child
-{
-    margin-right: auto;
+#logo{
+  flex-shrink: 0;
+}
+
+#logo a {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: white;
+}
+
+#logo img {
+  height: 3rem;
+  width: 3rem;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
 }
 
 /* Hero */
-.hero
-{
+.hero {
     height: auto;
     padding: 4rem calc(40%/2);
     background-color: var(--dark);
 }
 
-.clearfix
-{
+.clearfix {
     padding: 2rem 0;
 }
 
-.clearfix::after
-{
+.clearfix::after {
     content: "";
     clear: both;
     display: table;
 }
 
-.half-box
-{
+.half-box {
     float: left;
     height: 256px;
     width: 50%;
 }
 
-.half-box img
-{
+.half-box img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
 /* Info */
-.info
-{
+.info {
     height: auto;
     padding: 4rem calc(40%/2);
     background-color: var(--white)
 }
 
-.card-container
-{
+.card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -208,15 +251,13 @@ p
     color: var(--dark);
 }
 
-.card
-{
+.card {
     flex: 1 0;
     overflow: hidden;
     margin: 0rem 1.5rem;
 }
 
-.card img
-{
+.card img {
     width: 100%;
     height: 192px;
     object-fit: cover;
@@ -224,30 +265,26 @@ p
     border: var(--primary) 4px solid;
 }
 
-.card-info
-{
+.card-info {
     padding: 0px;
     text-align: center;
 }
 
 /* Quote */
-.quote
-{
+.quote {
     height: auto;
     padding: 4rem calc(40%/2);
     background-color: var(--light-gray);
 }
 
 /* Call */
-.call
-{
+.call {
     height: auto;
     padding: 4rem calc(40%/2);
     background-color: var(--white)
 }
 
-.call-container
-{
+.call-container {
     height: auto;
     display: flex;
     padding: 2rem 5rem;
@@ -256,25 +293,21 @@ p
     background-color: var(--primary);
 }
 
-.call-container-item
-{
+.call-container-item {
     align-items: center;
 }
 
-.call-container-item:nth-of-type(1)
-{
+.call-container-item:nth-of-type(1) {
     flex: 3;
 }
 
-.call-container-item:nth-of-type(2)
-{
+.call-container-item:nth-of-type(2) {
     flex: 1;
     text-align: right;
 }
 
 /* Footer */
-footer
-{
+footer {
     padding: 1.5rem 0px;
     text-align: center;
     color: var(--white);
