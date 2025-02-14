@@ -87,20 +87,7 @@ button.filled:hover, button.outlined:hover {
 }
 
 /* TEXT */
-.hero-primary
-{
-  font-size: 48px;
-  color: var(--primary-text);
-  line-height: 1.25;
-}
 
-.hero-secondary
-{
-  font-size: 18px;
-  font-weight: normal;
-  margin-bottom: 1rem;
-  color: var(--light-gray);
-}
 
 .info-head
 {
@@ -223,6 +210,20 @@ nav ul li a:hover {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.half-box .title
+{
+  font-size: 3rem;
+  color: var(--primary-text);
+}
+
+.half-box .descritpion
+{
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  color: var(--light-gray);
 }
 
 /* Info */
