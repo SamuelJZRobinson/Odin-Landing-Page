@@ -1,7 +1,6 @@
 /* Uses joshwcomeau CSS Reset */
 /* Global */
-:root
-{
+:root {
   --primary-text: #F9FAF8;
   --primary-bg: #3882F6;
   --light-gray: #E5E7EB;
@@ -51,13 +50,7 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-
-
-
-
-
-
-/* BUTTONS */
+/* Buttons */
 button {
   height: auto;
   width: 128px;
@@ -87,7 +80,7 @@ button.filled:hover, button.outlined:hover {
 }
 
 /* Header */
-header{
+header {
   width: 100%;
   height: auto;
   padding: 1rem 15%;
@@ -108,7 +101,6 @@ nav ul {
   align-items: center;
   height: auto;
   list-style: none;
-  
 }
 
 nav ul li {
@@ -116,7 +108,7 @@ nav ul li {
   font-weight: 700;
 }
 
-nav ul li a{
+nav ul li a {
   color: var(--light-gray);
 }
 
@@ -124,7 +116,7 @@ nav ul li a:hover {
   color: var(--primary-bg);
 }
 
-#logo{
+#logo {
   flex-shrink: 0;
 }
 
@@ -168,14 +160,12 @@ nav ul li a:hover {
   object-fit: cover;
 }
 
-.half-box .title
-{
+.half-box .title {
   font-size: 3rem;
   color: var(--primary-text);
 }
 
-.half-box .descritpion
-{
+.half-box .descritpion {
   font-size: 1rem;
   font-weight: normal;
   margin-bottom: 1rem;
@@ -184,17 +174,17 @@ nav ul li a:hover {
 
 /* Main */
 /* Info */
-main{
+main {
   height: 100%;
   width: 100%;
   background-color: var(--primary-text)
 }
 
-#info{
+#info {
   padding: 6rem 20%;
 }
 
-#info .title{
+#info .title {
   text-align: center;
   font-weight: bold;
   font-size: 2rem;
