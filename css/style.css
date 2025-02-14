@@ -86,16 +86,6 @@ button.filled:hover, button.outlined:hover {
   background-color: #2b66c5;
 }
 
-/* TEXT */
-.call-head
-{
-  font-size: 18px;
-  font-weight: bold;
-  color: var(--primary-text);
-  line-height: 1;
-}
-
-
 /* Header */
 header{
   width: 100%;
@@ -197,8 +187,11 @@ nav ul li a:hover {
 main{
   height: 100%;
   width: 100%;
-  padding: 1rem 15%;
   background-color: var(--primary-text)
+}
+
+#info{
+  padding: 1rem 20%;
 }
 
 #info .title{
@@ -212,7 +205,6 @@ main{
   grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
   grid-template-rows: auto;
   gap: 3rem;
-  padding: 0rem 4rem;
   color: var(--secondary-bg);
   margin-bottom: 2rem;
 }
@@ -237,31 +229,36 @@ main{
 }
 
 /* Quote */
-.quote-text
-{
-  font-size: 28px;
-  font-weight: 300;
-  font-style: italic;
-  text-align: justify;
-  color: var(--secondary-bg);
+.quote {
+  height: auto;
+  padding: 1rem 20%;
+  background-color: var(--light-gray);
 }
 
-.quote-ref
-{
-  font-size: 14px;
+.quote .text {
+  font-size: 1.25rem;
+  font-weight: normal;
+  font-style: italic;
+  color: var(--secondary-bg);
+  margin-bottom: 1rem;
+}
+
+.quote .reference {
+  font-size: 0.8rem;
   font-weight: bold;
   text-align: right;
   color: var(--secondary-bg);
-  line-height: 1;
-}
-
-.quote {
-    height: auto;
-    padding: 4rem calc(40%/2);
-    background-color: var(--light-gray);
 }
 
 /* Call */
+.call-head
+{
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--primary-text);
+  line-height: 1;
+}
+
 .call {
     height: auto;
     padding: 4rem calc(40%/2);
