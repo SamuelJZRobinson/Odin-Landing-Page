@@ -1,6 +1,6 @@
 # odin-landing-page
 ** Summary: **
-- Basic website for any theme.
+- Basic website with a chess theme.
 - The Odin Project provided design specifications for the page layout and colour scheme.
 
 **Tech Used:**
