@@ -132,8 +132,6 @@ nav ul li a:hover {
 #logo img {
   height: 3rem;
   width: 3rem;
-  filter: invert(100%);
-  -webkit-filter: invert(100%);
 }
 
 /* Hero */
